@@ -71,7 +71,7 @@ You can access case-based ticket support!
 
 #   DevNet Events
 ##  DevNet at Cisco Live
-Cisco live is where ~~Chuck Robbins uses the young blood of aspiring CCIEs to rejuvenate~~
+Cisco live is where
 Cisco users can collaborate with SMEs to gain experience and CCIE continuing education credits.
 
 ##  DevNet Express
