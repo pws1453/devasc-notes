@@ -75,7 +75,7 @@ Cisco live is where ~~Chuck Robbins uses the young blood of aspiring CCIEs to re
 Cisco users can collaborate with SMEs to gain experience and CCIE continuing education credits.
 
 ##  DevNet Express
-2-day evnts with five diferent tracks
+2-day events with five different tracks
 * Cisco DNA
 * Cloud Collaboration
 * Data Center
