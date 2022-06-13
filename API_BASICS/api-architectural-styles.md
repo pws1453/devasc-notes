@@ -10,6 +10,11 @@ RPC - Remote Procedure Call
 *   Client is usually unaware that the request is being executed remotely
 *   RPC is mostly performed in a synchronous manner
     *   Asynchronous calls can be performed
+*   Each Call has it's own endpoint
+*   RPC Server Performs
+    *   Error Handling
+    *   Reply message
+    *   Function Call???
 *   RPC can be applied to different transfer protocols
     *   SOAP
     *   JSON-RPC

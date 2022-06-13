@@ -1,0 +1,225 @@
+{
+    "totalCount": "10",
+    "imdata": [
+        {
+            "fvAp": {
+                "attributes": {
+                    "annotation": "",
+                    "childAction": "",
+                    "descr": "",
+                    "dn": "uni/tn-common/ap-default",
+                    "extMngdBy": "",
+                    "lcOwn": "local",
+                    "modTs": "2022-06-10T13:59:33.582+00:00",
+                    "monPolDn": "uni/tn-common/monepg-default",
+                    "name": "default",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "prio": "unspecified",
+                    "status": "",
+                    "uid": "0",
+                    "userdom": "all"
+                }
+            }
+        },
+        {
+            "fvAp": {
+                "attributes": {
+                    "annotation": "",
+                    "childAction": "",
+                    "descr": "",
+                    "dn": "uni/tn-infra/ap-access",
+                    "extMngdBy": "",
+                    "lcOwn": "local",
+                    "modTs": "2022-06-10T13:59:38.543+00:00",
+                    "monPolDn": "uni/tn-common/monepg-default",
+                    "name": "access",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "prio": "unspecified",
+                    "status": "",
+                    "uid": "0",
+                    "userdom": "all"
+                }
+            }
+        },
+        {
+            "fvAp": {
+                "attributes": {
+                    "annotation": "",
+                    "childAction": "",
+                    "descr": "",
+                    "dn": "uni/tn-infra/ap-ave-ctrl",
+                    "extMngdBy": "",
+                    "lcOwn": "local",
+                    "modTs": "2022-06-10T13:59:38.543+00:00",
+                    "monPolDn": "uni/tn-common/monepg-default",
+                    "name": "ave-ctrl",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "prio": "unspecified",
+                    "status": "",
+                    "uid": "0",
+                    "userdom": "all"
+                }
+            }
+        },
+        {
+            "fvAp": {
+                "attributes": {
+                    "annotation": "orchestrator:terraform",
+                    "childAction": "",
+                    "descr": "This application profile is created by Terraform",
+                    "dn": "uni/tn-tf_tenant/ap-tf_app",
+                    "extMngdBy": "",
+                    "lcOwn": "local",
+                    "modTs": "2022-06-10T14:01:13.222+00:00",
+                    "monPolDn": "uni/tn-common/monepg-default",
+                    "name": "tf_app",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "prio": "unspecified",
+                    "status": "",
+                    "uid": "15374",
+                    "userdom": ":all:"
+                }
+            }
+        },
+        {
+            "fvAp": {
+                "attributes": {
+                    "annotation": "",
+                    "childAction": "",
+                    "descr": "",
+                    "dn": "uni/tn-Ansible/ap-Ansible_Navigator",
+                    "extMngdBy": "",
+                    "lcOwn": "local",
+                    "modTs": "2022-06-10T14:19:55.444+00:00",
+                    "monPolDn": "uni/tn-common/monepg-default",
+                    "name": "Ansible_Navigator",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "prio": "unspecified",
+                    "status": "",
+                    "uid": "15374",
+                    "userdom": ":all:"
+                }
+            }
+        },
+        {
+            "fvAp": {
+                "attributes": {
+                    "annotation": "",
+                    "childAction": "",
+                    "descr": "",
+                    "dn": "uni/tn-Ansible/ap-AAP2",
+                    "extMngdBy": "",
+                    "lcOwn": "local",
+                    "modTs": "2022-06-10T14:19:57.323+00:00",
+                    "monPolDn": "uni/tn-common/monepg-default",
+                    "name": "AAP2",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "prio": "unspecified",
+                    "status": "",
+                    "uid": "15374",
+                    "userdom": ":all:"
+                }
+            }
+        },
+        {
+            "fvAp": {
+                "attributes": {
+                    "annotation": "",
+                    "childAction": "",
+                    "descr": "",
+                    "dn": "uni/tn-Ansible/ap-OpenShift",
+                    "extMngdBy": "",
+                    "lcOwn": "local",
+                    "modTs": "2022-06-10T14:19:59.178+00:00",
+                    "monPolDn": "uni/tn-common/monepg-default",
+                    "name": "OpenShift",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "prio": "unspecified",
+                    "status": "",
+                    "uid": "15374",
+                    "userdom": ":all:"
+                }
+            }
+        },
+        {
+            "fvAp": {
+                "attributes": {
+                    "annotation": "",
+                    "childAction": "",
+                    "descr": "",
+                    "dn": "uni/tn-Ansible/ap-RHEL",
+                    "extMngdBy": "",
+                    "lcOwn": "local",
+                    "modTs": "2022-06-10T14:20:01.052+00:00",
+                    "monPolDn": "uni/tn-common/monepg-default",
+                    "name": "RHEL",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "prio": "unspecified",
+                    "status": "",
+                    "uid": "15374",
+                    "userdom": ":all:"
+                }
+            }
+        },
+        {
+            "fvAp": {
+                "attributes": {
+                    "annotation": "",
+                    "childAction": "",
+                    "descr": "",
+                    "dn": "uni/tn-PS_Toolkit_Tenant/ap-sus_app",
+                    "extMngdBy": "",
+                    "lcOwn": "local",
+                    "modTs": "2022-06-10T14:23:32.234+00:00",
+                    "monPolDn": "uni/tn-common/monepg-default",
+                    "name": "sus_app",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "prio": "unspecified",
+                    "status": "",
+                    "uid": "15374",
+                    "userdom": ":all:"
+                }
+            }
+        },
+        {
+            "fvAp": {
+                "attributes": {
+                    "annotation": "",
+                    "childAction": "",
+                    "descr": "",
+                    "dn": "uni/tn-tenant_public/ap-APP_Project-Iuri4",
+                    "extMngdBy": "",
+                    "lcOwn": "local",
+                    "modTs": "2022-06-10T14:25:38.917+00:00",
+                    "monPolDn": "uni/tn-common/monepg-default",
+                    "name": "APP_Project-Iuri4",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "prio": "unspecified",
+                    "status": "",
+                    "uid": "15374",
+                    "userdom": ":all:"
+                }
+            }
+        }
+    ]
+}

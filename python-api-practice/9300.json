@@ -1,0 +1,1 @@
+{"errorCode": "BadRequest", "message": "Invalid character (character ?=? is not allowed)", "detail": "Invalid character found in request, please update request and resend"}

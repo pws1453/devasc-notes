@@ -1,0 +1,23 @@
+from ncclient import manager
+import config
+import re
+import xml.etree.ElementTree as ET
+
+
+
+def main():
+    man = manager.connect(host=config.HOST,port=830,username=config.USER,password=config.PASS,hostkey_verify=False,device_params={'name':'csr'})
+    rcfg = man.get_config(source='running').data_xml
+    root = ET.fromstring(rcfg)
+    
+    ints = root.find(f"./{config.NATIVE_NS}native/{config.NATIVE_NS}interface")
+    for child in ints:
+        inttype = child.tag.split("}")[1]
+        ipadd = child.find(f"./{config.NATIVE_NS}ip/{config.NATIVE_NS}address/{config.NATIVE_NS}primary/{config.NATIVE_NS}address")
+        intname = child.find(f"{config.NATIVE_NS}name")
+        if ipadd is not None and intname is not None:
+            print(f"{inttype} {intname.text}: {ipadd.text}")
+
+
+if __name__ == "__main__":
+    main()

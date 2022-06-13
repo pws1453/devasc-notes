@@ -1,0 +1,69 @@
+{
+    "response": [
+        {
+            "vlanType": "Configured from Cisco DNA-Center",
+            "vlanNumber": 150,
+            "numberOfIPs": 256,
+            "ipAddress": "172.16.0.1",
+            "prefix": "24",
+            "interfaceName": "Vlan150",
+            "networkAddress": "172.16.0.0"
+        },
+        {
+            "vlanType": "Configured from Cisco DNA-Center",
+            "vlanNumber": 1021,
+            "numberOfIPs": 16,
+            "ipAddress": "10.10.30.1",
+            "prefix": "28",
+            "interfaceName": "Vlan1021",
+            "networkAddress": "10.10.30.0"
+        },
+        {
+            "vlanNumber": 823,
+            "numberOfIPs": 256,
+            "ipAddress": "10.10.20.81",
+            "prefix": "24",
+            "interfaceName": "Vlan823",
+            "networkAddress": "10.10.20.0"
+        },
+        {
+            "vlanNumber": 1,
+            "interfaceName": "Vlan1"
+        },
+        {
+            "vlanType": "Configured from Cisco DNA-Center",
+            "vlanNumber": 1022,
+            "numberOfIPs": 256,
+            "ipAddress": "10.1.1.1",
+            "prefix": "24",
+            "interfaceName": "Vlan1022",
+            "networkAddress": "10.1.1.0"
+        },
+        {
+            "vlanType": "Configured from Cisco DNA-Center",
+            "vlanNumber": 2000,
+            "numberOfIPs": 256,
+            "ipAddress": "10.1.2.1",
+            "prefix": "24",
+            "interfaceName": "Vlan2000",
+            "networkAddress": "10.1.2.0"
+        }
+    ],
+    "version": "1.0"
+}{
+    "response": [
+        {
+            "vlanNumber": 1,
+            "interfaceName": "Vlan1"
+        },
+        {
+            "vlanNumber": 823,
+            "numberOfIPs": 256,
+            "ipAddress": "10.10.20.82",
+            "prefix": "24",
+            "interfaceName": "Vlan823",
+            "networkAddress": "10.10.20.0"
+        }
+    ],
+    "version": "1.0"
+}

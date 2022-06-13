@@ -1,0 +1,12 @@
+{
+   "tailf-ncs:services": {
+      "logging": {
+         "logger": [
+            {
+               "name": "default",
+               "log-entry-level": "info"
+            }
+         ]
+      }
+   }
+}

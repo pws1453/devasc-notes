@@ -1,0 +1,19 @@
+---
+- name: Write a configuration file
+  hosts: devenv
+  connection: local
+  tasks:
+
+    - name: "Create a new file"
+      file:
+        path: 
+        state: touch
+    - name: "Update file permissions"
+      file:
+        path: 
+        mode: 700
+    - name: "Update file content from template"
+      template:
+        src: 
+        dest:
+        mode: 0644

@@ -7,6 +7,7 @@ Files following these formats generally have extensions that contain the name
 ##  XML
 *   Looks a ton like HTML
 *   Not HTML
+*   Library - `xmltodict`
 *   XML Version and Encoding are required in prologue
 *   Structure of body - tree
 *   Tag names are user-defined
@@ -18,14 +19,17 @@ Files following these formats generally have extensions that contain the name
 *   Attributes
     *   Can add attributes to the tag to include metadata
     *   Values must be in single of double quotes
-*   Namespaces
+*   **Namespaces**
     *   Some documents must include namespaces to specify specific tags and purposes
+    *   Use case: two or more applications use the same tag names but represent a completely different object
+        *   Example: A table from a furniture store's inventory API and Network inventory API
     *   Use the `xmlns` attribute to denote this
 *   Comments - `<!-- surround comments here-->`
 
 
 ##  JSON
 *   Looks like a python dictionary
+*   Library - `json`
 *   JSON DOES NOT SUPPORT COMMENTS
 *   Lists can be written similarly to python lists or javascript arrays
 
