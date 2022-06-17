@@ -1,0 +1,5 @@
+deviceCollection:
+    ipAddresses:
+      - "10.10.20.81"
+      - "10.10.20.82"
+    

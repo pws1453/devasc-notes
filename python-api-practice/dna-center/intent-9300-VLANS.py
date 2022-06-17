@@ -10,10 +10,13 @@ def getToken(session : requests.Session):
     res = session.post(auth_url,data=None,verify=False).json()
     return res["Token"]
 
-def getDeviceList(session : requests.Session):
+def getDeviceList(session : requests.Session, type):
     dev_url = creds.URL + "/dna/intent/api/v1/network-device"
-    typeparam = "type=Cisco Catalyst 9300 Switch"
-    return session.get(dev_url+"?"+typeparam,verify=False).json()
+    if type is not None:
+        req_url = f"{dev_url}?type={type}"
+    else:
+        req_url = dev_url
+    return session.get(req_url,verify=False).json()
 
 def getDeviceVLAN(id,session : requests.Session):
     vlan_url = creds.URL + f"/dna/intent/api/v1/network-device/{id}/vlan"
@@ -27,7 +30,8 @@ def main():
     session = requests.Session()
     token = getToken(session)
     session.headers.update({"X-Auth-Token":token})
-    fulljson = getDeviceList(session)
+    type = "Cisco Catalyst 9300 Switch"
+    fulljson = getDeviceList(session,type)
     response = fulljson["response"]
     with open("9300.json","w") as f:
         json.dump(response,f,indent=4)

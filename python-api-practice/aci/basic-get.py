@@ -18,7 +18,8 @@ def main():
     ses = requests.Session()
     print(userLogin(creds.LOGIN,creds.PASSWORD,ses))
     with open("basic.json","w") as f:
-        js = json.loads(fabricAppQuery(ses))
+        faq = fabricAppQuery(ses)
+        js = json.loads(faq)
         json.dump(js,f)
 
 
