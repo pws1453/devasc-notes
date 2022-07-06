@@ -4,7 +4,8 @@ import creds
 import requests
 import urllib3
 
-def getToken(session : requests.Session):
+
+def getToken(session: requests.Session):
     """
     Get a token from DNA Cemter using given credentials
     Params:
@@ -12,13 +13,14 @@ def getToken(session : requests.Session):
     Return:
         Token:      Token from DNA Center appliance
     """
-    auth_url = creds.URL+"/dna/system/api/v1/auth/token"
-    session.headers.update({"Content-Type":"application/json"})
-    session.auth = (creds.UNAME,creds.PASS)
-    res = session.post(auth_url,data=None,verify=False).json()
+    auth_url = creds.URL + "/dna/system/api/v1/auth/token"
+    session.headers.update({"Content-Type": "application/json"})
+    session.auth = (creds.UNAME, creds.PASS)
+    res = session.post(auth_url, data=None, verify=False).json()
     return res["Token"]
 
-def getDevices(session : requests.Session, config):
+
+def getDevices(session: requests.Session, config):
     """
     Get device information from DNA Center using specified IP Addresses
     Params:
@@ -35,7 +37,7 @@ def getDevices(session : requests.Session, config):
             req_url = f"{dev_url}?managementIpAddress={addr}"
         else:
             req_url = dev_url
-        fulljson = session.get(req_url,verify=False).json()
+        fulljson = session.get(req_url, verify=False).json()
         response = fulljson["response"][0]
         retDict.append(dict())
         retDict[count]["id"] = response["id"]
@@ -48,7 +50,8 @@ def getDevices(session : requests.Session, config):
         count += 1
     return retDict
 
-def getDeviceConfig(session : requests.Session, devInfo : dict):
+
+def getDeviceConfig(session: requests.Session, devInfo: dict):
     """
     Writes configuration information to a device-specific file
     Params:
@@ -58,24 +61,23 @@ def getDeviceConfig(session : requests.Session, devInfo : dict):
         None
     """
     for addr in devInfo:
-        id =  addr["id"]
+        id = addr["id"]
         add = addr["addr"]
-        with open(f"{add}-config.json","w") as f:
+        with open(f"{add}-config.json", "w") as f:
             vlan_url = creds.URL + f"/dna/intent/api/v1/network-device/{id}/config"
-            conf = session.get(vlan_url,verify=False).json()
+            conf = session.get(vlan_url, verify=False).json()
             conf = conf | addr
-            json.dump(conf,f,indent=3)
-
+            json.dump(conf, f, indent=3)
 
 
 def main():
     session = requests.Session()
     urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
     token = getToken(session)
-    session.headers.update({"X-Auth-Token":token})
-    with open("config.yaml","r") as f:
-        devInfo = getDevices(session,yaml.safe_load(f))
-    getDeviceConfig(session,devInfo)
+    session.headers.update({"X-Auth-Token": token})
+    with open("config.yaml", "r") as f:
+        devInfo = getDevices(session, yaml.safe_load(f))
+    getDeviceConfig(session, devInfo)
 
 
 if __name__ == "__main__":
